@@ -1,0 +1,11 @@
+pipeline_targets:{%- if cookiecutter.include_api_service %}
+  - name: {{ cookiecutter.__api_service_name }}
+    base_image_type: api
+{%- endif %}
+{%- if cookiecutter.include_cli %}
+  - name: {{ cookiecutter.__cli_name }}
+    base_image_type: task
+{%- endif %}
+{%- if cookiecutter.include_lambda %}
+  - name: {{ cookiecutter.__lambda_name }}
+{%- endif %}

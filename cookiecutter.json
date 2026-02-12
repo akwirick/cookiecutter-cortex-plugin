@@ -2,7 +2,7 @@
   "project_name": "my-cortex-plugin",
   "license": "MIT",
   "version": "0.1.0",
-  "_copy_without_render": [
-    "src/**"
-  ]
+  "include_api_service": true,
+  "include_cli": true,
+  "include_lambda": true
 }
